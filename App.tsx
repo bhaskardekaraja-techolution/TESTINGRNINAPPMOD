@@ -12,14 +12,14 @@ function App() {
   const isDarkMode = useColorScheme() === 'dark';
 
   return (
-    <View style={styles.container}>
+    <View style={containerstyle.container}>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <NewAppScreen templateFileName="App.tsx" />
     </View>
   );
 }
 
-const styles = StyleSheet.create({
+const containerstyle = StyleSheet.create({
   container: {
     flex: 1,
   },
